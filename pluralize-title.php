@@ -13,6 +13,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+$loader = require 'vendor/autoload.php';
+
 add_filter( 'the_title', 'fe_pluralize_post_title', 15 );
 
 /**
@@ -26,8 +28,8 @@ add_filter( 'the_title', 'fe_pluralize_post_title', 15 );
  */
 function fe_pluralize_post_title( $title ) {
 
-	// append an 's' to make the title plural
-	$title .= 's';
+	// make the title plural
+	$title = Doctrine\Common\Inflector\Inflector::pluralize( $title );
 
 	return $title;
 }
