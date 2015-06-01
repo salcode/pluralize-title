@@ -3,7 +3,7 @@
  * Plugin Name: Pluralize Title
  * Plugin URI:
  * Description: Demo Autoload Third Party Library with Composer by @salcode
- * Version: 0.1.0
+ * Version: 0.2.0
  * Author: Sal Ferrarello
  * Author URI: http://salferrarello.com/
  */
